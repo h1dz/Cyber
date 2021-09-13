@@ -12,6 +12,7 @@ N='\033[0m'    #${N}
 
 
 echo ${Y}'IP = '$1 >> scanresults
+date >> scanresults
 printf "${N}\n----------------------------------Start----------------------------------\n\n${B}" >> scanresults
 printf "\n----------------------------------nmap quick----------------------------------\n\n${G}" >> scanresults
 printf "${N}\nScanning...\n\n${G}"
