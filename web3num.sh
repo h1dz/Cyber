@@ -25,7 +25,7 @@ printf "${B}\n----------------------------------nmap vuln-----------------------
 sudo nmap -sC -sV --script vuln $1 >> scanresults
 echo ${Y}"3/15 Completed" >> scanresults
 printf "${B}\n----------------------------------gobuster----------------------------------\n\n${G}" >> scanresults
-gobuster dir -u http://$1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -x .php,.html,.txt >> scanresults
+gobuster dir -u http://$1 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt >> scanresults
 gobuster vhost -w /usr/share/secLists/Discovery/DNS/subdomains-top1million-20000.txt -u $1 >> scanresults
 cat scanresults
 echo ${Y}"4/15 Completed" >> scanresults
