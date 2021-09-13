@@ -10,9 +10,8 @@ R='\033[0;91m' #${R}
 Y='\033[0;33m' #${Y}
 N='\033[0m'    #${N}
 
-
-echo ${Y}'IP = '$1 >> scanresults
 date >> scanresults
+echo ${Y}'IP = '$1 >> scanresults
 printf "${N}\n----------------------------------Start----------------------------------\n\n${B}" >> scanresults
 printf "\n----------------------------------nmap quick----------------------------------\n\n${G}" >> scanresults
 printf "${N}\nScanning...\n\n${G}"
