@@ -1,5 +1,6 @@
 #!/bin/bash
-#Buggy script | most likely needs to be ran a couple of times | 
+#Very buggy script | most likely needs to be ran a couple of times and require user input to restart services | 
+#I use this to auto install all the tools and setup when making a new Kali VM.
 cd /home/kali/
 sudo rm -rf Documents/ Videos/ Pictures/ Music/ Templates/ Public/ Desktop/ 2>/dev/null
 sudo mkdir Tools
