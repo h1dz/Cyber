@@ -1,11 +1,11 @@
-# **[Welcome!](https://h1dz.github.io/h1dz/)**
+# **[Welcome!](https://h1dz.github.io/Cyber/)**
  
 
 This page will link to scripts I have made that are orientated towards penetration testing. These scripts have been useful to me while studying Penetration Testing and also participating in Capture The Flags.
 
 ## These notes are subject to change as I am constantly learning and updating them!              
 
-### [Scripts](https://github.com/h1dz/h1dz/tree/Scripts) 
+### [Scripts](https://github.com/h1dz/Cyber/tree/Scripts) 
 - Virtual Host enumeration script 
 - Ping script to get a better idea what operating system the host is running and if it is up
 - Gobuster enumeration script  
