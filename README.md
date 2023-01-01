@@ -1,7 +1,7 @@
 # **Welcome!**
  
 
-This page will link to scripts I have made that are orientated towards penetration testing, enumeration and post exploitation. These scripts have been useful to me while studying Penetration Testing and also participating in Capture The Flags. 
+This page will link to scripts I have made that are orientated towards penetration testing. These scripts have been useful to me while studying Penetration Testing and also participating in Capture The Flags.
 
 ## These notes are subject to change as I am constantly learning and updating them!              
 
