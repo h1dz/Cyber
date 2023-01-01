@@ -1,4 +1,5 @@
 #!/bin/bash
+#sudo ./nmap.sh <RHOST>
 GF='\033[5;32m' #${GF} 
 G='\033[0;92m' #${G}  
 Y='\033[0;33m' #${Y}
