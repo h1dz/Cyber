@@ -1,6 +1,6 @@
 #!/bin/bash
 #Very buggy script | most likely needs to be ran a couple of times and require user input to restart services | 
-#I use this to auto install all the tools and setup when making a new Kali VM.
+#I use this to auto install all the tools and automate my setup when making a new Kali VM.
 cd /home/kali/
 sudo rm -rf Documents/ Videos/ Pictures/ Music/ Templates/ Public/ Desktop/ 2>/dev/null
 sudo mkdir Tools
@@ -24,7 +24,7 @@ sudo apt-get install docker.io -y
 sudo apt-get install feroxbuster -y
 sudo apt-get install subfinder -y
 sudo apt-get install neo4j -y
-sudo apt-get install bloodhound -y  #maybe cause
+sudo apt-get install bloodhound -y  
 sudo apt-get install libreoffice-common -y
 sudo apt-get install libreoffice-writer -y
 sudo apt install kali-wallpapers-all
