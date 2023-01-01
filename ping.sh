@@ -1,4 +1,5 @@
 #!/bin/bash
+#./ping.sh <RHOST>
 G='\033[5;32m' #${G} green
 R='\033[5;31m' #${R} red
 P='\033[4;35m' #${P} purple
