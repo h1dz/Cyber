@@ -1,4 +1,5 @@
 # **Scripts!**    
+- Currently working on a gobuster reccursive scan script.     
       
     
 ### **ping.sh**    
