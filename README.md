@@ -1,24 +1,22 @@
-# **Welcome!**
- 
-
-This page will link to scripts I have made that are orientated towards penetration testing. These scripts have been useful to me while studying Penetration Testing and also participating in Capture The Flags.
-
-## These notes are subject to change as I am constantly learning and updating them!              
-
-### [Scripts](https://github.com/h1dz/Pen-Testing/tree/Scripts) 
-- SMB enumeration script
-- Virtual Host enumeration script 
-- Ping script to get a better idea what operating system the host is running and if it is up
-- Gobuster enumeration script  
-- Nmap port scanning script 
-- Masscan to scan TCP and UDP ports as a confirmatry.    
-     
-### [CTF Report Template](https://h1dz.notion.site/Lab-Report-545292e58942465488b13c3db91399b0)   
-- This is the layout of my report in Notion that I use to record information discovered when going through CTF challenges.     
+# **Scripts!**    
+      
     
-### [CTF Progress](https://h1dz.gitbook.io/ctf/)    
-- Just a site where I keep my progress of CTFs completed and also my progress on Burp Suite's Port Swigger Academy.    
+### **ping.sh**    
+- Simple script to ping the host and determine what OS is running.    
+   
+### **nmap.sh**    
+- Script to run a quick TCP/UDP scan followed by a full port scan of TCP and UDP.
     
+### **masscan.sh**    
+- Run this along side the nmap script to confirm the same ports are open.    
      
-     
+### **vhosts.sh**      
+- After adding the domain name to /etc/hosts run this or run this with just the IP to try enumerate for possible virtual hosts.   
+    
+### **gobuster.sh**    
+- Run this to go through multiple directory files for bruteforcing with one command.    
+    
+
+
+
 _last update: 01/01/2023_
