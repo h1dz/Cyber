@@ -8,7 +8,6 @@ rm -rf NMAPscanTCPq.txt 2>/dev/null
 rm -rf NMAPscanUDPq.txt 2>/dev/null
 rm -rf NMAPscanUDPfull.txt 2>/dev/null
 clear
-#TCP
 tput bold; printf "${GF}IP = "$1
 tput bold; printf "\n${Y}[+] Starting Quick TCP Scan at: ${N}" | tee -a -i NMAPscanTCPq.txt
 date | tee -a -i NMAPscanTCPq.txt
@@ -27,8 +26,6 @@ tput bold; printf "${GF}IP = "$1
 tput bold; printf "\n${G}[-] Full TCP Scan Completed at: ${N}" | tee -a -i NMAPscanTCPfull.txt
 date  | tee -a -i NMAPscanTCPfull.txt
 tput bold; printf "${Y}[+] Starting Quick UDP Scan at: ${N}"
-#UDP
-####
 date  | tee -a -i NMAPscanUDPq.txt
 sudo nmap -sU -n --top-ports 5000 -T5 --open $1 --max-retries 1 --defeat-rst-ratelimit -oN NMAPscanUDPq.txt
 clear 
