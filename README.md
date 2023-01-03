@@ -2,7 +2,7 @@
 - Currently working on a gobuster reccursive scan script.     
       
 ### **openai.py**   
-- Python script using the openai module to interact with chatGPT. Not perfect but works. Just enter your API Key and ready to go!     
+- Python script using the openai module to interact with chatGPT via CLI. Not perfect but works. Just enter your API Key and ready to go!     
      
 ### **ping.sh**    
 - Simple script to ping the host and determine what OS is running.    
@@ -22,4 +22,4 @@
 
 
 
-_last update: 03/01/2023_
+_last update: 04/01/2023_
