@@ -20,7 +20,7 @@ def backspace():
 
 def get_input():
     # Get user input
-    prompt = input("\n\033[1;32mAsk: \033[0m")
+prompt = input("\n\033[1;32mAsk: \033[0m\n")
     return prompt
 
 def history_up():
@@ -78,7 +78,8 @@ while True:
         )
 
         message = completions.choices[0].text
-        print("\033[1;31m#\033[0m" + message + "\n")
+				print("\033[1;31m#\033[0m")
+        print(message)
         print("\033[1;31m#\033[0m")
 
 
