@@ -5,7 +5,7 @@ import sys
 import readline
 
 # Your unique openai API from signing up
-openai.api_key = "<YOURAPI>"
+openai.api_key = "<APIKEY>"
 
 model_engine = "text-davinci-003"
 
