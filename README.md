@@ -18,8 +18,9 @@
     
 ### **gobuster.sh**    
 - Run this to go through multiple directory files for bruteforcing with one command.    
-    
-
-
-
+     
+### **passgen.ps1**   
+- This PowerShell script will generate a random password with special characters, numbers, upper and lowercase letters, set to 20 characters long.   
+      
+     
 _last update: 04/01/2023_
