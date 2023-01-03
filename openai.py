@@ -1,5 +1,6 @@
 #<---To INSTALL openai module, first run: pip3 install openai
 #<---USAGE: python openai.py
+#<---EXIT: CTRL + C
 import openai
 import sys
 import readline
