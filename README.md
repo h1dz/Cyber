@@ -6,7 +6,7 @@ This page will link to scripts I have made that are orientated towards penetrati
 ## These notes are subject to change as I am constantly learning and updating them!              
 
 ### [Scripts](https://github.com/h1dz/Cyber/tree/Scripts) 
-- Python script to interact with ChatGPT cia CLI. 
+- Python script to interact with ChatGPT cia CLI. {Extremely Buggy} 
 - PowerShell script to generate a random password 20 characters long.   
 - Virtual Host enumeration script 
 - Ping script to get a better idea what operating system the host is running and if it is up
