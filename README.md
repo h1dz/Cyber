@@ -1,5 +1,5 @@
 # **Scripts!**    
-- Currently working on a gobuster reccursive scan script.     
+- Currently working on a gobuster reccursive scan script and a bash script that will check for live local subnets and run a port scan on each using default system tools.     
       
 ### **openai.py**   
 - Python script using the openai module to interact with chatGPT via CLI. Not perfect but works. Just enter your API Key and ready to go!     
@@ -23,4 +23,4 @@
 - This PowerShell script will generate a random password with special characters, numbers, upper and lowercase letters, set to 20 characters long.   
       
      
-_last update: 04/01/2023_
+_last update: 20/01/2023_
