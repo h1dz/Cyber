@@ -15,5 +15,5 @@ while true; do
    "messages": [{"role": "user", "content": "'"$var1"'"}] 
    }')
   content=$(echo "$response" | sed 's/^\\n\\n//' | grep -oP '(?<="content":")[^"]*')
-  printf "${Y}${content}${N}\n"
+  printf "\nChatGPT: ${Y}${content}${N}\n"
 done
