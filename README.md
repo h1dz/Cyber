@@ -6,7 +6,8 @@ This page will link to scripts I have made that are orientated towards penetrati
 ## These notes are subject to change as I am constantly learning and updating them!              
 
 ### [Scripts](https://github.com/h1dz/Cyber/tree/Scripts) 
-- Bash script to interact with ChatGPT API cia CLI. {Buggy} 
+- Bash script to interact with ChatGPT API cia CLI (.sh file).
+- Batch script to interact with ChatGPT API via CLI (batch file).
 - PowerShell script to generate a random password 20 characters long.   
 - Ping script to get a better idea what operating system the host is running and if it is up
 - Gobuster enumeration script  
@@ -21,4 +22,4 @@ This page will link to scripts I have made that are orientated towards penetrati
     
      
      
-_last update: 20/01/2023_
+_last update: 20/03/2023_
