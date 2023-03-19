@@ -2,7 +2,10 @@
 - Currently working on a script that will make gobuster run recurssively and also a script that will check for live local subnets and run a port scan on each using default system tools.     
       
 ### **openai.sh**   
-- Bash script using the openai API to interact with chatGPT via CLI. Not perfect but works. Just enter your API Key and ready to go!     
+- Linux Bash script using the openai API to interact with chatGPT via CLI. Not perfect but works. Just enter your API Key and ready to go! 
+   
+### **openai.bat**  
+- Windows Batch script using the ChatGPT API via command prompt CLI. Ensure to enter your API key in the code.
      
 ### **ping.sh**    
 - Simple script to ping the host and determine what OS is running.    
