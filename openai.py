@@ -3,7 +3,7 @@ import openai
 openai.api_key = '<OPENAI-KEY>'
 
 messages = [
-    {"role": "system", "content": "You are a kind helpful assistant and a master professional in coding and secure code reviewing.."},
+    {"role": "system", "content": "You are a helpful assistant and a master professional in writing secure code and secure code reviewing."},
 ]
      
 
