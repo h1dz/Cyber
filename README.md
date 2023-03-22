@@ -4,6 +4,9 @@
 ### **openai.sh**   
 - Linux Bash script using the openai API to interact with chatGPT via CLI. Not perfect but works. Just enter your API Key and ready to go! 
    
+### **openai.py**   
+- Python script using the openai API to interact with chatGPT via CLI. Need to install the opani module first, this can be done by ```pip install openai``` Then just enter your API Key and ready to go! 
+   
 ### **openai.bat**  
 - Windows Batch script using the ChatGPT API via command prompt CLI. Ensure to enter your API key in the code.
      
