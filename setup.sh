@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
+sudo apt remove needrestart -y
 cd /$HOME/
 sudo rm -rf Documents/ Videos/ Pictures/ Music/ Templates/ Public/ Desktop/ 2>/dev/null
 sudo mkdir Tools
 mkdir misc
 mkdir home
-sudo apt remove needrestart -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold update -y 
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold upgrade -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install gedit -y
@@ -19,12 +19,12 @@ sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confo
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install amap -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install nishang -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install docker.io -y
-sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install feroxbuster -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install subfinder -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install neo4j -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install bloodhound -y  
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install libreoffice-common -y
 sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install libreoffice-writer -y
+sudo apt-get -o DPkg::options::=--force-confdef -o DPkg::options::=--force-confold install feroxbuster -y
 sudo gem install haiti-hash
 sudo apt install kali-wallpapers-all -y
 sudo docker pull rustscan/rustscan:latest 
@@ -58,7 +58,7 @@ sudo wget https://raw.githubusercontent.com/Arinerron/CVE-2022-0847-DirtyPipe-Ex
 sudo wget https://raw.githubusercontent.com/FireFart/dirtycow/master/dirty.c; sudo mv dirty.c dirtycow.c
 sudo wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh; sudo mv lse.sh LinuxSmartEnum.sh
 sudo wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64 -O pspy64
-sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.3/chisel_1.7.3_linux_amd64.gz -O chisel_linux.gz; sudo gunzip -d *.gz; sudo chmod +x chisel_linux
+sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.7/chisel_1.7.7_linux_amd64.gz -O chisel_linuxv177.gz; sudo gunzip -d chisel_linuxv177.gz
 cd /$HOME/Tools/windows/AD
 sudo git clone https://github.com/Ridter/noPac
 sudo git clone https://github.com/harshil-shah004/zerologon-CVE-2020-1472.git
@@ -91,13 +91,20 @@ cat << EOF > /$HOME/home/bashshell.sh
 chmod +x bashshell.sh
 EOF
 cd /$HOME/Tools/windows/
+sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.7/chisel_1.7.7_windows_amd64.gz -O chisel_windowsv177.gz; sudo gunzip -d chisel_windowsv177.gz
 sudo wget https://raw.githubusercontent.com/h1dz/Windows-Tools/master/powerup.ps1 -O powerup.ps1
-sudo wget https://github.com/h1dz/Windows-Tools/raw/master/mimikatz.exe -O mimikatz.exe
-sudo wget https://github.com/jpillora/chisel/releases/download/v1.7.3/chisel_1.7.3_windows_amd64.gz -O chisel_windows.gz; sudo gunzip -d *.gz; sudo chmod +x chisel_windows
 sudo wget https://github.com/carlospolop/PEASS-ng/releases/download/20220203/winPEASx64.exe -O winPEASx64.exe
 sudo wget https://github.com/ohpe/juicy-potato/releases/download/v0.1/JuicyPotato.exe -O JuicyPotato.exe
 sudo wget https://github.com/antonioCoco/RoguePotato/releases/download/1.0/RoguePotato.zip -O RoguePotato.zip; sudo unzip -q RoguePotato.zip; sudo rm -rf RoguePotato.zip RogueOxidResolver.exe
 sudo wget https://github.com/int0x33/nc.exe/raw/master/nc64.exe -O nc64.exe
+sudo wget https://github.com/h1dz/Windows-Tools2/raw/master/Rubeus.exe -O Rubeus.exe
+sudo wget https://github.com/h1dz/Windows-Tools2/raw/master/PsExec.exe -O psexec.exe
+sudo wget https://nmap.org/dist/nmap-7.92-win32.zip -O nmap.zip; sudo unzip nmap.zip; sudo rm -rf nmap.zip
+sudo mkdir mimi; cd mimi
+sudo wget https://gitlab.com/kalilinux/packages/mimikatz/-/raw/kali/master/x64/mimidrv.sys - O mimidrv.sys
+sudo wget https://gitlab.com/kalilinux/packages/mimikatz/-/raw/kali/master/x64/mimikatz.exe - O mimikatz.exe
+sudo wget https://gitlab.com/kalilinux/packages/mimikatz/-/raw/kali/master/x64/mimilib.dll - O mimilib.dll
+sudo wget https://gitlab.com/kalilinux/packages/mimikatz/-/raw/kali/master/x64/mimispool.dll - O mimispool.dll
 cd /$HOME/
 echo "alias msf1='sudo msfconsole -q -x \"use exploit/multi/handler; set payload /linux/meterpreter/reverse_tcp; set lhost tun0; set lport 443; exploit\"'" >> /$HOME/.bash_aliases
 echo "alias msf2='sudo msfconsole -q -x \"use exploit/multi/handler; set PAYLOAD /windows/meterpreter/reverse_tcp; set LHOST tun0; set LPORT 443; exploit\"'" >> /$HOME/.bash_aliases
