@@ -1,4 +1,4 @@
-# **Scripts!**    
+# **Scripts! Scripts! Scripts!**    
 - Currently working on a script that will make gobuster run recurssively and also a script that will check for live local subnets and run a port scan on each using default system tools.     
       
 ### **openai.sh**   
