@@ -26,4 +26,4 @@
 - This PowerShell script will generate a random password with special characters, numbers, upper and lowercase letters, set to 20 characters long.   
       
      
-_last update: 20/03/2023_
+_last update: 11/09/2023_
